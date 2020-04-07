@@ -1,0 +1,5 @@
+http.auth.basic.user: filip
+http.auth.basic.password: password
+
+target_storage.data_format.type: FILESYSTEM_HTML
+target_storage.data_format.filesystem.compress_data: false

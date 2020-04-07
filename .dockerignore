@@ -5,6 +5,7 @@ bin/
 build/
 .DS_Store
 .gradle/
+storagemount/
 
 ache-dashboard/node_modules
 ache-dashboard/coverage
@@ -13,3 +14,4 @@ ache-dashboard/.gradle
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+Dockerfile
