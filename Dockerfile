@@ -7,7 +7,7 @@ FROM openjdk:11-jdk
 
 ADD . /ache-src
 WORKDIR /ache-src
-RUN /ache-src/gradlew installDist && mv /ache-src/build/install/ache /ache && rm -rf /ache-src/ /root/.gradle
+RUN /ache-src/gradlew installDist && mv /ache-src/build/install/ache /ache && rm -rf /ache-src/ /root/.gradle && export ACHE_HOME=/ache && export PATH="$ACHE_HOME/bin:$PATH"
 
 # Makes JVM aware of memory limit available to the container (cgroups)
 ENV JAVA_OPTS='-XX:+UseContainerSupport -XX:MaxRAMPercentage=80'
